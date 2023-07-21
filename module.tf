@@ -1,15 +1,14 @@
 # Provider Block
 provider "aws" {
   region  = "us-east-1"
-  profile = "bharath"
 }
 
 variable "requester_vpc" {
-  default = "vpc-095e2532dec8f2eb2"
+  default = "vpc-XXXXXXXXXXXXXXXXXXX"
 }
 
 variable "accepter_vpcs" {
-  default = ["vpc-0e5b14f70041ad695", "vpc-02c789e9d4827c24c"]
+  default = ["vpc-XXXXXXXXXXXXXXXXXXX", "vpc-XXXXXXXXXXXXXXXXXXX"]
 }
 
 module "vpc-peering" {
